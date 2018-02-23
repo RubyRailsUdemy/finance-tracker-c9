@@ -1,3 +1,15 @@
 <h3 align="center"><%= @user.full_name %>'s Portfolio</h3>
 
+<div align="right">
+  <table>
+    <tr>
+      <td><strong>Full Name: </strong></td>
+      <td><%= @user.full_name %> <br /></td>
+    </tr>
+    <tr>
+      <td><strong>Email: </strong></td>
+      <td><%= @user.email %></td>
+    </tr>
+  </table>
+</div>
 <%= render 'stocks/list' %>
